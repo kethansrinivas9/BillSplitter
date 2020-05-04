@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.billsplitter.MainActivity"
+    android:background="@drawable/gradient">
+
+    <ImageView
+        android:id="@+id/splashImage"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150sp"
+        android:contentDescription="@string/todo">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:text="@string/bill_splitter"
+        android:fontFamily="serif"
+        android:textSize="50sp"
+        android:textColor="@color/browser_actions_text_color"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:text="@string/a_simler_way_to_manage_bills"
+        android:textSize="20sp"
+        android:textColor="@color/browser_actions_text_color"
+        android:fontFamily="serif"
+        android:layout_marginTop="20dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp">
+    </TextView>
+
+</RelativeLayout>

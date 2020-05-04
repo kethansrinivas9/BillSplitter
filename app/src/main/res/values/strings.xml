@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">BillSplitter</string>
+    <string name="facebook_application_id" translatable="false">fb1:267777246856:android:614fe359e6a0addf80413d</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fb1:267777246856:android:614fe359e6a0addf80413d</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_new_group">Create a group</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_activity">Activity</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_log_out">Log Out</string>
+
+    <string name="paid_by_you">Paid by: You</string>
+    <string name="paid_by_friend">Paid by: Friend</string>
+    <string name="a_simler_way_to_manage_bills">A simpler way to manage bills</string>
+    <string name="todo">TODO</string>
+    <string name="bill_splitter">Bill Splitter</string>
+
+    <string name="create_new_group_button">Create Group</string>
+
+    <string name="add_friends">Add Friends</string>
+
+    <string name="settle">SETTLE UP</string>
+
+    <string name="add_friends_group">ADD FRIENDS</string>
+
+    <string name="add_expense">Add expense</string>
+
+    <string name="empty_group">  Your expenses with groups will appear here!</string>
+    <string name="empty_friends">  Your expenses with friends will appear here!</string>
+
+    <string-array name="person">
+        <item>You</item>
+        <item>Friend</item>
+    </string-array>
+
+    <string-array name="split_share">
+        <item>Equally</item>
+        <item>Unequally</item>
+    </string-array>
+
+    <string name="start_group">Start Your Group</string>
+</resources>

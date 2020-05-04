@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.billsplitter">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bill_splitter_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/bill_splitter_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".DisplayImage" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".DisplayGroup" />
+        <activity android:name=".GroupActivitySettleExpense" />
+        <activity
+            android:name=".NewExpense"
+            android:label="@string/add_expense" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettleExpenses" />
+        <activity
+            android:name=".NewGroup"
+            android:label="@string/action_new_group" />
+        <activity android:name=".AddFriend" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+    </application>
+    <uses-permission-sdk-23
+        android:name="android.permission.READ_CONTACTS"
+        android:protectionLevel="normal" />
+
+    <uses-permission-sdk-23
+        android:name="android.permission.WRITE_CONTACTS"
+        android:protectionLevel="normal" />
+
+</manifest>

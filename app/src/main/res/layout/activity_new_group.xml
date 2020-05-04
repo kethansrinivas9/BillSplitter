@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewGroup">
+
+    <TextView
+        android:id="@+id/group_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_group"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"></TextView>
+
+    <LinearLayout
+        android:id="@+id/group_name_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/group_text_view">
+
+        <ImageView
+            android:id="@+id/group_icon"
+            android:layout_width="35dp"
+            android:layout_height="49dp"
+            android:src="@drawable/ic_group_black_24dp" />
+
+        <EditText
+            android:id="@+id/group"
+            android:hint="Enter a group name"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp" >
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/group_radio_button_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/group_name_linear_layout">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+            <RadioButton android:id="@+id/radio_apartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apartment"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_house"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trip"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/create_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_friends"
+            android:layout_marginTop="300dp">
+        </Button>
+        <Button
+            android:id="@+id/create_group_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_new_group_button"
+            android:layout_marginTop="300dp">
+        </Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

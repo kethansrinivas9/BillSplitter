@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="35dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/item_describe"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/circular_image"
+            android:text="Item" />
+
+        <EditText
+            android:id="@+id/describeitem"
+            android:hint="Describe an item"
+            android:inputType="text"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLayout"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/first_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/item_amount"
+            android:layout_width="35dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/amount_image"
+            android:text="Item" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:inputType="numberDecimal"
+            android:hint="Enter an amount">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middleLayout"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/secondLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+        <ImageView
+            android:id="@+id/image_friend"
+            android:layout_width="35dp"
+            android:layout_height="49dp"
+            android:src="@drawable/ic_person_add_black_24dp"
+            android:text="Item" />
+
+        <Spinner
+            android:id="@+id/list_friends"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third_layout"
+        android:layout_below="@id/middleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp">
+
+        <Button
+            android:id="@+id/paidByButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid by ">
+        </Button>
+        <TextView
+            android:id="@+id/split_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  and split  "
+            android:textSize="23dp">
+        </TextView>
+        <Button
+            android:id="@+id/splitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Equally">
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fourth_layout"
+        android:layout_below="@id/third_layout"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:id="@+id/upload_image"
+            android:layout_width="50dp"
+            android:layout_height="45dp"
+            android:background="@drawable/ic_add_a_photo_black_camera_48dp"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/additem"
+            android:text="Add item"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp">
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expense_image_layout"
+        android:layout_below="@id/fourth_layout"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/expense_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                />
+    </LinearLayout>
+
+</RelativeLayout>
